@@ -27,6 +27,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	srand(time(NULL));
+	
 	// map creation
 	for (i = 0; i < LENGTH; i++) {					
 		for (j = 0; j < HEIGHT; j++) {
@@ -54,7 +55,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		switch (command) {
 		case 'm':
 			state = MAP;
-			for (i = 0; i < LENGTH; i++){								// prints the updated map
+			// prints the updated map
+			for (i = 0; i < LENGTH; i++){								
 				for (j = 0; j < HEIGHT; j++){
 					cout << map[i][j] << " ";
 				}
@@ -66,7 +68,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			state = ATTACK;
 
 			cout << "Targets left: " << targetCounter << endl;
-			// cout << << endl;
+			
 			while ((cout << "Please input the x-coordinate: (0-19) ") && (!(cin >> xCoord) || xCoord < 0 || xCoord > 19)){
 				cin.clear();
 				cin.ignore(numeric_limits<streamsize>::max(), '\n');
