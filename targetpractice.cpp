@@ -40,11 +40,11 @@ int _tmain(int argc, _TCHAR* argv[])
 			}
 		}
 	}
-
+	
+	/* SETUP END */
+	
 	cout << "Welcome to Target Practice!" << endl << "The goal is to hit all the targets in the least amount of time possible."
 		 << endl << "You can access the map as needed." << endl << endl;
-
-	/* SETUP END */
 
 	while (state != QUIT && targetCounter > 0){
 		cout << "Turn: " << turn << endl;
