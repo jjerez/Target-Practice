@@ -27,8 +27,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	srand(time(NULL));
-
-	for (i = 0; i < LENGTH; i++) {					// map creation
+	// map creation
+	for (i = 0; i < LENGTH; i++) {					
 		for (j = 0; j < HEIGHT; j++) {
 			int random = rand() % 100;
 			if ((i == random) || (j == random)){
