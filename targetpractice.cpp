@@ -1,3 +1,5 @@
+// To be run in Microsoft Visual Studio
+
 #include "stdafx.h"
 #include <iostream>
 #include <cstdlib>
